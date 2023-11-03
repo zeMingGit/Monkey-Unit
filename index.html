@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form input {
+            width: 200px;
+            height: 24px;
+            padding: 8px 16px;
+            margin-bottom: 20px;
+        }
+
+        .form label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+       .form input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+        }
+
+        .form button {
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            border: 0;
+            border-radius: 5px;
+            background-color: #1677FF;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <input type="text" name="account" placeholder="请输入用户名">
+        <input type="password" name="password" placeholder="请输入密码">
+        <label for="">
+            <input type="checkbox" name="keepLogin[]" value="1" checked>保持登录
+        </label>
+        <button type="submit" id="submit">登录</button>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
